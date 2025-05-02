@@ -1,0 +1,65 @@
+Understanding HTTP&HTTPS 
+
+1. HTTP – HyperText Transfer Protocol
+ Purpose: Foundation of data communication for the web.
+ Flow:
+  → Client sends request (GET, POST)
+  → Server sends back status + data (HTML, JSON)
+ Versions:
+  • HTTP 1.0 – One request per connection (slow)
+  • HTTP 1.1 – Persistent connection (keep-alive)
+  • HTTP 2.0 – Multiplexing, binary-based, faster
+
+2. HTTPS – Secure HTTP
+ Adds encryption to HTTP using SSL/TLS
+ Benefits:
+  • Data Encryption (can't be read)
+  • Data Integrity (can’t be changed)
+  • Authentication (trusted server identity)
+
+3. SSL/TLS – How Encryption Works
+ SSL/TLS = security protocols used in HTTPS
+ Flow:
+  • Client Hello → Server Hello + Certificate
+  • Client verifies cert → Sends encrypted session key
+  • Secure session starts (AES encryption used)
+ Uses:
+  • RSA (public-private keys) in handshake
+  • AES (symmetric key) for data transfer
+
+4. SSL Certificate (Explained)
+ Contains:
+  • Domain (CN): app.eraser.io
+  • Issuer: Google Trust Services
+  • Public Key: For secure exchange
+  • Validity: Start/Expiry Date
+  Browser uses this to verify authenticity (padlock icon shows)
+
+5. HTTP Status Codes
+ 200 – OK
+ 301 – Moved Permanently
+ 400 – Bad Request
+ 404 – Not Found
+ 500 – Internal Server Error
+
+6. Proxy vs Reverse Proxy
+ Proxy (Client-side):
+  • Hides user identity, mostly used in browsers
+ Reverse Proxy (Server-side):
+  • Hides actual server
+  • Load balancing, protects from DDoS
+
+7. VPN – Virtual Private Network
+ Creates encrypted tunnel between user and web
+ Benefits:
+  • Hides IP address
+  • Protects on public Wi-Fi
+  • Bypasses geo-blocks
+ Common in corporate networks + privacy tools
+
+8. Extra Concepts Reviewed:
+ OSI Layer: Network Layer (Layer 3) = Routing, IP addressing
+ Subnet Mask: Splits IP into network & host
+ NAT: Converts private IP → public IP (used in routers)
+ DNS Records: A, CNAME, TXT, PTR (DHCP ≠ DNS record)
+
